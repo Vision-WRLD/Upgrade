@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointments | SolaraJewelly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="diamond-rain" aria-hidden="true"></div>
+  <div class="top-bar">Private viewings • Persian-inspired elegance • Toronto luxury jewellery</div>
+  <header class="site-header"><a class="brand" href="index.html">Solara<span>Jewelly</span></a><button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="bridal.html">Bridal</a><a href="about.html">Maison</a><a class="active" href="contact.html">Appointments</a><a class="cart-nav" href="checkout.html">Bag <span class="cart-count">0</span></a></nav></header>
+  <main>
+    <section class="contact-layout section-reveal">
+      <div class="contact-copy"><p class="eyebrow">Private appointment</p><h1>Book your SolaraJewelly viewing.</h1><p>Use this form to request a private viewing, bridal consultation, gifting appointment, or custom styling support.</p><div class="contact-info"><p><strong>Email:</strong> hello@solarajewelly.com</p><p><strong>Hours:</strong> Monday to Saturday, 10 AM – 7 PM</p></div></div>
+      <form class="contact-form" action="mailto:hello@solarajewelly.com" method="post" enctype="text/plain">
+        <label>Full Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Appointment Type<select name="appointment"><option>Private Viewing</option><option>Bridal Consultation</option><option>Gift Styling</option><option>Custom Request</option></select></label>
+        <label>Preferred Date<input type="date" name="date"></label>
+        <label>Message<textarea name="message" rows="5" placeholder="Tell us what you are looking for..."></textarea></label>
+        <button class="btn primary" type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><div><strong>SolaraJewelly</strong><p>Fine jewellery with golden warmth and Persian-inspired grace.</p></div><a href="index.html">Home →</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

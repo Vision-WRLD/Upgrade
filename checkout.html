@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | SolaraJewelly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="diamond-rain" aria-hidden="true"></div>
+  <div class="top-bar">Complimentary gift wrapping • Secure checkout preview • Luxury appointment service</div>
+  <header class="site-header"><a class="brand" href="index.html">Solara<span>Jewelly</span></a><button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav"><a href="index.html">Home</a><a href="collections.html">Collections</a><a href="bridal.html">Bridal</a><a href="about.html">Maison</a><a href="contact.html">Appointments</a><a class="cart-nav active" href="checkout.html">Bag <span class="cart-count">0</span></a></nav></header>
+  <main>
+    <section class="page-hero checkout-hero section-reveal"><p class="eyebrow">Private checkout</p><h1>Your jewellery bag.</h1><p>Select pieces from the collection, adjust quantities, review your order, and complete a polished checkout request. This version is ready for GitHub and does not process real payments yet.</p></section>
+
+    <section class="checkout-layout section-reveal">
+      <div class="cart-panel">
+        <div class="cart-heading"><h2>Selected Pieces</h2><button class="clear-cart" type="button">Clear Bag</button></div>
+        <div id="cart-items" class="cart-items"></div>
+      </div>
+
+      <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+        <div class="summary-line"><span>HST 13%</span><strong id="tax">$0</strong></div>
+        <div class="summary-line"><span>Luxury wrapping</span><strong>Complimentary</strong></div>
+        <div class="summary-total"><span>Total</span><strong id="total">$0</strong></div>
+        <a class="btn primary checkout-button" href="#checkout-form">Continue to Details</a>
+        <p class="checkout-note">Payment integration can be added later with Stripe, Shopify, or PayPal.</p>
+      </aside>
+    </section>
+
+    <section class="checkout-form-wrap section-reveal" id="checkout-form">
+      <form class="contact-form checkout-form" id="order-form">
+        <p class="eyebrow">Client details</p>
+        <h2>Complete checkout request</h2>
+        <label>Full Name<input required name="name" type="text" placeholder="Your name"></label>
+        <label>Email<input required name="email" type="email" placeholder="you@example.com"></label>
+        <label>Phone<input required name="phone" type="tel" placeholder="905-000-0000"></label>
+        <label>Delivery Method<select required name="delivery"><option value="">Choose one</option><option>Ship to my address</option><option>Private in-store pickup</option><option>Book viewing before purchase</option></select></label>
+        <label>Address or Notes<textarea name="notes" rows="4" placeholder="Add shipping address, preferred pickup time, ring size, or special notes."></textarea></label>
+        <button class="btn primary" type="submit">Place Checkout Request</button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><div><strong>SolaraJewelly</strong><p>Fine jewellery with golden warmth and Persian-inspired grace.</p></div><a href="collections.html">Keep shopping →</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
